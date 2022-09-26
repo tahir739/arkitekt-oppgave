@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+#root {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section.site-content {
+    padding: 30px 30px 0 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row-flex {
+    display: flex;
+    justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+th {
+    text-align: left;
+}
+table tr>td,
+table tr>th {
+    border: 2px solid;
+}
+.Adresse,
+.Adresse input {
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table th {
+    background-color: #cccccc;
+}
+
+.light-grey {
+    background-color: #ececec;
+}
+
+.top-section th,
+.top-section td{
+padding: 4px 8px;
+}
+
+.middle-section {
+width: 400px;
+    display: flex;
+    border: 2px solid;
+}
+
+.middle-section .text {
+    max-width: 130px;
+    border-right: 2PX solid;
+        padding: 8px;
+}
+
+.middle-section .dato,
+.bottom-section .dato
+ {
+    width: 100%;
+}
+.middle-section .dato input,
+.bottom-section .dato input{
+    width: 98%;
+}
+
+.middle-section .dato.with-height input {
+    height: 40px;
+}
+
+footer {
+    margin-top: auto;
+    min-height: 50px;
+    padding: 0 30px;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
 }
